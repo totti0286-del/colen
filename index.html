@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ấn phẩm độc quyền: Bí Kíp Chọn Rượu Linh Vật Mang Lộc & Vượng 2026</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Noto+Serif:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Serif', serif;
+            background: linear-gradient(135deg, #1a0000 0%, #4a0000 50%, #8B0000 100%);
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Popup Modal */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .popup-content {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        
+        .popup-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 30px;
+            color: #666;
+            cursor: pointer;
+            background: none;
+            border: none;
+            line-height: 1;
+        }
+        
+        .popup-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px;
+            color: #B71C1C;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .popup-text {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .popup-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #B71C1C 0%, #D32F2F 100%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+        
+        .popup-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Fixed Contact Buttons */
+        .fixed-contacts {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9998;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .contact-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        
+        .contact-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .zalo-btn {
+            background: linear-gradient(135deg, #0068FF 0%, #0084FF 100%);
+        }
+        
+        .call-btn {
+            background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+        }
+        
+        /* Page 1 - Cover */
+        .cover-page {
+            background: linear-gradient(135deg, #8B0000 0%, #B71C1C 50%, #D32F2F 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            padding: 80px 60px;
+            overflow: hidden;
+        }
+        
+        .cover-page::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,215,0,0.08) 0%, transparent 70%);
+            animation: rotate 40s linear infinite;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .cover-ornament-top {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 60px;
+            opacity: 0.3;
+        }
+        
+        .cover-ornament-bottom {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 60px;
+            opacity: 0.3;
+        }
+        
+        .cover-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+        
+        .cover-badge {
+            display: inline-block;
+            background: rgba(255,215,0,0.2);
+            border: 2px solid #FFD700;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            color: #FFD700;
+        }
+        
+        .cover-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 52px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            line-height: 1.3;
+        }
+        
+        .cover-subtitle {
+            font-size: 26px;
+            font-weight: 300;
+            margin-bottom: 50px;
+            letter-spacing: 1px;
+            opacity: 0.95;
+            line-height: 1.5;
+        }
+        
+        .decorative-line {
+            width: 200px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #FFD700 50%, transparent 100%);
+            margin: 40px auto;
+        }
+        
+        .cover-brand {
+            margin-top: 60px;
+        }
+        
+        .brand-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            color: #FFD700;
+            font-size: 32px;
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+        }
+        
+        .brand-tagline {
+            font-size: 16px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+        
+        /* Inner Pages */
+        .inner-page {
+            padding: 80px 70px;
+            min-height: 100vh;
+            background: white;
+            position: relative;
+        }
+        
+        .page-header {
+            border-left: 6px solid #B71C1C;
+            padding-left: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .page-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 44px;
+            font-weight: 700;
+            color: #B71C1C;
+            margin-bottom: 15px;
+        }
+        
+        .page-subtitle {
+            font-size: 18px;
+            color: #666;
+            font-weight: 400;
+        }
+        
+        /* Introduction Section */
+        .intro-section {
+            background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+            border-radius: 12px;
+            padding: 50px;
+            margin-bottom: 60px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            position: relative;
+        }
+        
+        .intro-section::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 120px;
+            color: rgba(183,28,28,0.1);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .intro-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px;
+            color: #B71C1C;
+            margin-bottom: 30px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .intro-text {
+            font-size: 17px;
+            line-height: 2;
+            color: #333;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+        
+        .intro-highlight {
+            font-weight: 600;
+            color: #B71C1C;
+        }
+        
+        .intro-signature {
+            text-align: right;
+            font-style: italic;
+            color: #666;
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        
+        /* Product Cards */
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+        
+        .product-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+            border: 2px solid #e0e0e0;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #B71C1C 0%, #D4AF37 100%);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(183,28,28,0.2);
+            border-color: #B71C1C;
+        }
+        
+        .product-image-container {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            background: #f5f5f5;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+        
+        .product-number {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, #B71C1C 0%, #D32F2F 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(183,28,28,0.4);
+        }
+        
+        .product-info {
+            flex: 1;
+        }
+        
+        .product-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 34px;
+            font-weight: 700;
+            color: #B71C1C;
+            margin-bottom: 25px;
+        }
+        
+        .product-meaning {
+            background: #fff3e0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #D4AF37;
+        }
+        
+        .meaning-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #B71C1C;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        
+        .meaning-text {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .product-details {
+            margin-top: 25px;
+        }
+        
+        .detail-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        
+        .detail-icon {
+            color: #B71C1C;
+            margin-right: 12px;
+            font-size: 20px;
+            margin-top: 2px;
+        }
+        
+        .detail-label {
+            font-weight: 600;
+            color: #333;
+            min-width: 150px;
+        }
+        
+        .detail-value {
+            color: #666;
+            flex: 1;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #B71C1C 0%, #8B0000 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 25px;
+            text-align: center;
+        }
+        
+        .cta-text {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        
+        /* Feng Shui Guide Table */
+        .guide-section {
+            background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+            padding: 50px;
+            border-radius: 16px;
+            margin: 60px 0;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+        
+        .guide-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 38px;
+            font-weight: 700;
+            color: #B71C1C;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        
+        .guide-table {
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .guide-table th {
+            background: linear-gradient(135deg, #B71C1C 0%, #8B0000 100%);
+            color: white;
+            padding: 22px;
+            font-weight: 600;
+            text-align: left;
+            font-size: 16px;
+        }
+        
+        .guide-table td {
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 15px;
+        }
+        
+        .guide-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .guide-table tr:hover {
+            background: #f5f5f5;
+        }
+        
+        .guide-note {
+            margin-top: 35px;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            border-left: 5px solid #B71C1C;
+            text-align: center;
+        }
+        
+        .guide-note-text {
+            font-size: 18px;
+            color: #B71C1C;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+        
+        /* Gift Guide Section */
+        .gift-guide {
+            margin: 60px 0;
+        }
+        
+        .gift-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+        }
+        
+        .gift-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .gift-card:hover {
+            border-color: #B71C1C;
+            box-shadow: 0 6px 20px rgba(183,28,28,0.15);
+        }
+        
+        .gift-card-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #B71C1C;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .gift-card-icon {
+            margin-right: 12px;
+            font-size: 26px;
+        }
+        
+        .gift-card-content {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .recommended-product {
+            background: #fff3e0;
+            padding: 18px;
+            border-radius: 8px;
+            margin-top: 18px;
+            font-weight: 600;
+            color: #D4AF37;
+            font-size: 15px;
+        }
+        
+        /* Display Style Section */
+        .display-section {
+            margin-top: 50px;
+            padding: 45px;
+            background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+            border-radius: 12px;
+        }
+        
+        .display-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 32px;
+            color: #B71C1C;
+            margin-bottom: 35px;
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .display-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        
+        .display-card {
+            background: white;
+            padding: 28px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .display-card h4 {
+            color: #B71C1C;
+            margin-bottom: 16px;
+            font-size: 19px;
+        }
+        
+        .display-card p {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, #B71C1C 0%, #8B0000 100%);
+            color: white;
+            padding: 60px;
+            border-radius: 16px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .contact-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .contact-subtitle {
+            font-size: 19px;
+            margin-bottom: 45px;
+            opacity: 0.95;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 12px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: 'Noto Serif', serif;
+        }
+        
+        .form-submit {
+            background: #FFD700;
+            color: #B71C1C;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .form-submit:hover {
+            transform: translateY(-2px);
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            max-width: 850px;
+            margin: 40px auto 0;
+        }
+        
+        .contact-item {
+            background: rgba(255,255,255,0.12);
+            padding: 25px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .contact-label {
+            font-size: 14px;
+            opacity: 0.85;
+            margin-bottom: 10px;
+        }
+        
+        .contact-value {
+            font-size: 19px;
+            font-weight: 600;
+        }
+        
+        .closing-quote {
+            margin-top: 45px;
+            font-size: 24px;
+            font-style: italic;
+            color: #FFD700;
+            font-weight: 500;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 35px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .footer-brand {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .footer-tagline {
+            opacity: 0.8;
+            margin-bottom: 25px;
+        }
+        
+        .footer-copyright {
+            opacity: 0.6;
+            font-size: 13px;
+        }
+        
+        @media (max-width: 768px) {
+            .product-card {
+                grid-template-columns: 1fr;
+            }
+            
+            .gift-cards,
+            .contact-info,
+            .display-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cover-title {
+                font-size: 36px;
+            }
+            
+            .inner-page {
+                padding: 40px 30px;
+            }
+            
+            .fixed-contacts {
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .contact-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Popup Modal -->
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closePopup()">&times;</button>
+            <h3 class="popup-title">🎁 Nhận Tư Vấn Miễn Phí</h3>
+            <p class="popup-text">Đăng ký ngay để được chuyên gia tư vấn chọn rượu phong thủy phù hợp với tuổi và mệnh của bạn!</p>
+            <a href="#dangky" class="popup-button" onclick="closePopup()">Đăng Ký Ngay</a>
+        </div>
+    </div>
+
+    <!-- Fixed Contact Buttons -->
+    <div class="fixed-contacts">
+        <a href="https://zalo.me/0986111079" class="contact-btn zalo-btn" target="_blank" title="Chat Zalo">
+            💬
+        </a>
+        <a href="tel:0986111079" class="contact-btn call-btn" title="Gọi điện">
+            📞
+        </a>
+    </div>
+
+    <!-- PAGE 1: COVER -->
+    <div class="page cover-page">
+        <div class="cover-ornament-top">✦ ✦ ✦</div>
+        
+        <div class="cover-content">
+            <div class="cover-badge">Ấn Phẩm Độc Quyền 2026</div>
+            
+            <h1 class="cover-title">
+                Bí Kíp Chọn Rượu Linh Vật<br>
+                Mang Lộc & Vượng 2026
+            </h1>
+            
+            <p class="cover-subtitle">
+                Tặng rượu đúng cách – Gửi vận may trọn vẹn<br>
+                Dành cho những người biết chọn và biết tặng
+            </p>
+            
+            <div class="decorative-line"></div>
+            
+            <div class="cover-brand">
+                <p class="brand-name">RƯỢU LINH VẬT VIP</p>
+                <p class="brand-tagline">Mang tài lộc • Gửi thịnh vượng • Chúc thành công</p>
+            </div>
+        </div>
+        
+        <div class="cover-ornament-bottom">✦ ✦ ✦</div>
+    </div>
+
+    <!-- PAGE 2: INTRODUCTION -->
+    <div class="page inner-page">
+        <div class="intro-section">
+            <h2 class="intro-title">Lời Mở Đầu</h2>
+            
+            <p class="intro-text">
+                Mỗi dịp Tết đến, tặng rượu không chỉ là gửi một món quà — mà là gửi gắm cả <span class="intro-highlight">lời chúc, sự trân trọng và may mắn đầu năm</span>.
+            </p>
+            
+            <p class="intro-text">
+                <span class="intro-highlight">Năm 2026 – năm Bính Ngọ (Ngựa)</span>, biểu trưng cho tốc độ, thành công và tự do. Vì thế, chọn đúng linh vật hợp tuổi – hợp vận – hợp mệnh là cách khởi đầu năm mới <span class="intro-highlight">tràn đầy tài lộc và thuận lợi</span>.
+            </p>
+            
+            <p class="intro-text">
+                <span class="intro-highlight">Rượu Linh Vật Vip</span> xin gửi đến anh/chị ấn phẩm này như một món quà tri ân, giúp anh/chị <span class="intro-highlight">chọn được chai rượu phù hợp nhất</span> để biếu tặng, trưng bày và đón lộc 2026.
+            </p>
+            
+            <p class="intro-signature">
+                — Trân trọng, Đội ngũ Rượu Linh Vật Vip
+            </p>
+        </div>
+    </div>
+
+    <!-- PAGE 3-6: 4 MAIN PRODUCTS -->
+    <div class="page inner-page">
+        <div class="page-header">
+            <h2 class="page-title">Bộ Sưu Tập 4 Mẫu Chủ Lực 2026</h2>
+            <p class="page-subtitle">Linh khí tụ tài - Thịnh vượng quanh năm</p>
+        </div>
+        
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="product-number">1</div>
+                    <img src="https://page.gensparksite.com/v1/base64_upload/bf295bb400d724b9ee85e38fb3571d13" alt="Ngựa Thần Pegasus" class="product-image">
+                </div>
+                
+                <div class="product-info">
+                    <h3 class="product-name">Ngựa Thần Pegasus</h3>
+                    
+                    <div class="product-meaning">
+                        <div class="meaning-label">🌟 Biểu trưng</div>
+                        <div class="meaning-text">Bay cao – Vượt khó – Thành tựu phi thường</div>
+                    </div>
+                    
+                    <div class="product-meaning">
+                        <div class="meaning-label">🎋 Ý nghĩa phong thủy</div>
+                        <div class="meaning-text">
+                            Pegasus - ngựa có cánh, tượng trưng cho sự vượt lên mọi giới hạn, bay cao vượt khó. 
+                            Linh vật này mang năng lượng đột phá, giúp gia chủ thăng tiến sự nghiệp, vượt qua thách thức, 
+                            đạt được những thành tựu phi thường.
+                        </div>
+                    </div>
+                    
+                    <div class="product-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">🔥</span>
+                            <span class="detail-label">Hợp mệnh:</span>
+                            <span class="detail-value">Hỏa, Thổ, Mộc</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🧭</span>
+                            <span class="detail-label">Hướng trưng bày:</span>
+                            <span class="detail-value">Nam, Đông Nam</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">👔</span>
+                            <span class="detail-label">Phù hợp:</span>
+                            <span class="detail-value">Doanh nhân, lãnh đạo</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-box">
+                        <p class="cta-text">📞 Liên hệ Shop để được tư vấn mẫu hợp tuổi & ngân sách</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="product-number">2</div>
+                    <img src="https://page.gensparksite.com/v1/base64_upload/595464aa7e4d26cec625f13464260ffb" alt="Song Mã Song Hỷ" class="product-image">
+                </div>
+                
+                <div class="product-info">
+                    <h3 class="product-name">Song Mã Song Hỷ</h3>
+                    
+                    <div class="product-meaning">
+                        <div class="meaning-label">🌟 Biểu trưng</div>
+                        <div class="meaning-text">Đoàn kết – Hợp tác – Thành công nhân đôi</div>
+                    </div>
+                    
+                    <div class="product-meaning">
+                        <div class="meaning-label">🎋 Ý nghĩa phong thủy</div>
+                        <div class="meaning-text">
+                            Song Mã đại diện cho sức mạnh của sự đồng hành và hợp tác. Hai con ngựa cùng phi về một hướng 
+                            tượng trưng cho việc cùng nhau vượt qua khó khăn, đạt đến đích thành công.
+                        </div>
+                    </div>
+                    
+                    <div class="product-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">🔥</span>
+                            <span class="detail-label">Hợp mệnh:</span>
+                            <span class="detail-value">Hỏa, Thổ, Kim</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🧭</span>
+                            <span class="detail-label">Hướng trưng bày:</span>
+                            <span class="detail-value">Tây, Tây Bắc</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">👔</span>
+                            <span class="detail-label">Phù hợp:</span>
+                            <span class="detail-value">Tặng đối tác, khách hàng VIP</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-box">
+                        <p class="cta-text">📞 Liên hệ Shop để được tư vấn mẫu hợp tuổi & ngân sách</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="product-number">3</div>
+                    <img src="https://page.gensparksite.com/v1/base64_upload/9357fac97cfa02c2f0c538567b1fea92" alt="Phi Mã Đại Việt" class="product-image">
+                </div>
+                
+                <div class="product-info">
+                    <h3 class="product-name">Phi Mã Đại Việt</h3>
+                    
+                    <div class="product-meaning">
+                        <div class="meaning-label">🌟 Biểu trưng</div>
+                        <div class="meaning-text">Uy quyền – Bản lĩnh – Thăng tiến vững chắc</div>
+                    </div>
+                    
+                    <div class="product-meaning">
+                        <div class="meaning-label">🎋 Ý nghĩa phong thủy</div>
+                        <div class="meaning-text">
+                            Long Mã kết hợp sức mạnh của Rồng và Ngựa, tạo nên biểu tượng của sự thăng tiến vững chắc và bền vững. 
+                            Món quà tuyệt vời để tặng người thân yêu.
+                        </div>
+                    </div>
+                    
+                    <div class="product-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">🔥</span>
+                            <span class="detail-label">Hợp mệnh:</span>
+                            <span class="detail-value">Thủy, Mộc, Kim</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🧭</span>
+                            <span class="detail-label">Hướng trưng bày:</span>
+                            <span class="detail-value">Bắc, Đông</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">👔</span>
+                            <span class="detail-label">Phù hợp:</span>
+                            <span class="detail-value">Tặng người thân, gia đình</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-box">
+                        <p class="cta-text">📞 Liên hệ Shop để được tư vấn mẫu hợp tuổi & ngân sách</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="product-number">4</div>
+                    <img src="https://page.gensparksite.com/v1/base64_upload/dba4007a4d5c712ee121a0a3453797b0" alt="Linh Mã Hoàng Kim" class="product-image">
+                </div>
+                
+                <div class="product-info">
+                    <h3 class="product-name">Linh Mã Hoàng Kim</h3>
+                    
+                    <div class="product-meaning">
+                        <div class="meaning-label">🌟 Biểu trưng</div>
+                        <div class="meaning-text">Tài lộc – Giàu sang – Thịnh vượng rực rỡ</div>
+                    </div>
+                    
+                    <div class="product-meaning">
+                        <div class="meaning-label">🎋 Ý nghĩa phong thủy</div>
+                        <div class="meaning-text">
+                            Linh Mã Hoàng Kim mang sắc vàng kim sang trọng, biểu tượng của sự giàu có và thịnh vượng. 
+                            Thu hút tài lộc, kích hoạt vận may tài chính.
+                        </div>
+                    </div>
+                    
+                    <div class="product-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">🔥</span>
+                            <span class="detail-label">Hợp mệnh:</span>
+                            <span class="detail-value">Kim, Thổ, Hỏa</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🧭</span>
+                            <span class="detail-label">Hướng trưng bày:</span>
+                            <span class="detail-value">Trung tâm, Tây Nam</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">👔</span>
+                            <span class="detail-label">Phù hợp:</span>
+                            <span class="detail-value">Doanh nhân, chủ cửa hàng</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-box">
+                        <p class="cta-text">📞 Liên hệ Shop để được tư vấn mẫu hợp tuổi & ngân sách</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 7: FENG SHUI GUIDE -->
+    <div class="page inner-page">
+        <div class="guide-section">
+            <h2 class="guide-title">Chọn Linh Vật Theo Mệnh & Hướng Trưng Bày</h2>
+            
+            <table class="guide-table">
+                <thead>
+                    <tr>
+                        <th>Mệnh</th>
+                        <th>Linh Vật Nên Chọn</th>
+                        <th>Hướng Trưng Bày</th>
+                        <th>Lợi Ích</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Kim</strong></td>
+                        <td>Linh Mã Hoàng Kim, Song Mã Song Hỷ</td>
+                        <td>Tây, Tây Bắc</td>
+                        <td>Tăng vận tài lộc, hợp tác thuận lợi</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mộc</strong></td>
+                        <td>Ngựa Thần Pegasus, Phi Mã Đại Việt</td>
+                        <td>Đông, Đông Nam</td>
+                        <td>Thăng tiến sự nghiệp, phát triển bền vững</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Thủy</strong></td>
+                        <td>Phi Mã Đại Việt</td>
+                        <td>Bắc</td>
+                        <td>Bảo vệ tài sản, trấn trạch, giữ của</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hỏa</strong></td>
+                        <td>Ngựa Thần Pegasus, Linh Mã Hoàng Kim</td>
+                        <td>Nam</td>
+                        <td>Kích hoạt công danh, danh vọng</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Thổ</strong></td>
+                        <td>Song Mã Song Hỷ, Linh Mã Hoàng Kim</td>
+                        <td>Trung tâm, Tây Nam</td>
+                        <td>Tích tụ tài lộc, ổn định kinh doanh</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="guide-note">
+                <p class="guide-note-text">
+                    ✨ Đặt đúng vị trí – tài khí tự đến ✨<br>
+                    🐎 Lộc mã hồi gia, phú quý quanh năm 🐎
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 8: GIFT GUIDE -->
+    <div class="page inner-page">
+        <div class="page-header">
+            <h2 class="page-title">Chọn Theo Đối Tượng Tặng</h2>
+            <p class="page-subtitle">Tặng đúng người - Gửi trọn tâm ý</p>
+        </div>
+        
+        <div class="gift-guide">
+            <div class="gift-cards">
+                <div class="gift-card">
+                    <h3 class="gift-card-title">
+                        <span class="gift-card-icon">👔</span>
+                        Tặng Sếp / Đối Tác Lớn
+                    </h3>
+                    <div class="gift-card-content">
+                        <p>Thể hiện sự tôn trọng và mong muốn hợp tác lâu dài, cùng nhau đạt thành công.</p>
+                        <div class="recommended-product">
+                            ⭐ Gợi ý: <strong>Song Mã Song Hỷ</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <h3 class="gift-card-title">
+                        <span class="gift-card-icon">❤️</span>
+                        Tặng Người Thân
+                    </h3>
+                    <div class="gift-card-content">
+                        <p>Gửi gắm lời chúc sức khỏe, bình an và may mắn đến những người thân yêu nhất.</p>
+                        <div class="recommended-product">
+                            ⭐ Gợi ý: <strong>Phi Mã Đại Việt</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <h3 class="gift-card-title">
+                        <span class="gift-card-icon">🚀</span>
+                        Tặng Bạn Bè / Doanh Nhân Trẻ
+                    </h3>
+                    <div class="gift-card-content">
+                        <p>Khích lệ tinh thần khởi nghiệp, vượt qua thách thức và đạt được đột phá trong sự nghiệp.</p>
+                        <div class="recommended-product">
+                            ⭐ Gợi ý: <strong>Ngựa Thần Pegasus</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <h3 class="gift-card-title">
+                        <span class="gift-card-icon">🏛️</span>
+                        Sưu Tầm / Trưng Bày Phong Thủy
+                    </h3>
+                    <div class="gift-card-content">
+                        <p>Trang trí không gian làm việc hoặc kinh doanh, thu hút tài lộc và năng lượng tích cực.</p>
+                        <div class="recommended-product">
+                            ⭐ Gợi ý: <strong>Linh Mã Hoàng Kim</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="decorative-line"></div>
+        
+        <div class="display-section">
+            <h3 class="display-title">🎨 Chọn Theo Phong Cách Trưng Bày</h3>
+            
+            <div class="display-grid">
+                <div class="display-card">
+                    <h4>🏠 Phòng Khách</h4>
+                    <p>Chọn dáng uy nghi, tông vàng kim/đỏ son để kích tài. Hợp Song Mã hoặc Hoàng Kim.</p>
+                </div>
+                
+                <div class="display-card">
+                    <h4>💼 Phòng Làm Việc</h4>
+                    <p>Chọn dáng phi nước đại, tượng trưng thăng tiến. Hợp Pegasus hoặc Phi Mã Đại Việt.</p>
+                </div>
+                
+                <div class="display-card">
+                    <h4>🏪 Tủ Rượu Doanh Nhân</h4>
+                    <p>Chọn mẫu song hành, biểu trưng hợp tác - phát triển. Bố cục cân xứng.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 9: CONTACT & FORM -->
+    <div class="page inner-page" id="dangky">
+        <div style="padding: 40px 0;">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 44px; color: #B71C1C; margin-bottom: 25px; font-weight: 700;">
+                    Đăng Ký Nhận Tư Vấn
+                </h2>
+                <p style="font-size: 19px; color: #666; line-height: 2; max-width: 850px; margin: 0 auto;">
+                    Chọn đúng chai rượu – là gửi đi lời chúc trọn vẹn nhất. Để lại thông tin để nhận tư vấn riêng 
+                    theo <strong style="color: #B71C1C;">tuổi – mệnh – ngân sách</strong> mùa Tết 2026.
+                </p>
+            </div>
+            
+            <div class="contact-section">
+                <h3 class="contact-title">Liên Hệ Tư Vấn</h3>
+                <p class="contact-subtitle">Đội ngũ chuyên gia phong thủy sẵn sàng tư vấn miễn phí</p>
+                
+                <form name="phongthuy" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" >
+                    <input type="hidden" name="form-name" value="phongthuy">
+                    <p style="display:none;">
+                        <label>Don't fill this out: <input name="bot-field" /></label>
+                    </p>
+                    
+                    <div class="form-group">
+                        <label for="name">Họ và tên *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="year">Năm sinh *</label>
+                        <input type="number" id="year" name="year" required placeholder="VD: 1990" min="1950" max="2024">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="purpose">Mục đích *</label>
+                        <select id="purpose" name="purpose" required>
+                            <option value="">-- Chọn mục đích --</option>
+                            <option value="bieu">Biếu tặng (sếp, đối tác)</option>
+                            <option value="trung">Trưng bày phong thủy</option>
+                            <option value="dung">Sử dụng cá nhân</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Ngân sách *</label>
+                        <select id="budget" name="budget" required>
+                            <option value="">-- Chọn ngân sách --</option>
+                            <option value="1500000">Dưới 2 triệu</option>
+                            <option value="2500000">Từ 2-3 triệu</option>
+                            <option value="4000000">Trên 3 triệu</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">🎁 NHẬN QUÀ PHONG THỦY NGAY</button>
+                </form>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-label">📧 Email</div>
+                        <div class="contact-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7c2f1d10190f520e091309101512140a1d080a150c3c1b111d1510521f1311">[email&#160;protected]</a></div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-label">📱 Zalo/Hotline</div>
+                        <div class="contact-value">0986.111.079</div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-label">👍 Fanpage</div>
+                        <div class="contact-value">Rượu Linh Vật Vip</div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-label">🎵 TikTok</div>
+                        <div class="contact-value">Rượu Linh Vật Vip</div>
+                    </div>
+                </div>
+                
+                <div class="closing-quote">
+                    "Tặng rượu – gửi tâm – chúc thành công"
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p class="footer-brand">RƯỢU LINH VẬT VIP</p>
+        <p class="footer-tagline">Mang tài lộc • Gửi thịnh vượng • Chúc thành công</p>
+        <div class="decorative-line" style="width: 150px; margin: 25px auto;"></div>
+        <p class="footer-copyright">© 2026 Rượu Linh Vật Vip. All rights reserved.</p>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Close popup function
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        // Close popup when clicking outside
+        document.getElementById('popup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePopup();
+            }
+        });
+
+        // Netlify Form Handler
+        const form = document.getElementById('phongthuy-form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(form);
+                
+                fetch('/api/send-phongthuy-email', {
+                    method: 'POST',
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams(formData).toString()
+                })
+                .then(() => {
+                    window.location.href = '/success.html';
+                })
+                .catch((error) => {
+                    alert('Có lỗi xảy ra. Vui lòng thử lại!');
+                });
+            });
+        }
+    </script>
+
+    <!-- MODAL QUÀ 8S -->
+    <style>
+    #pt-modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.8);z-index:99999;animation:fadeIn .4s}
+    #pt-modal.show{display:flex}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .pt-box{background:#fff;padding:35px;border-radius:20px;max-width:550px;width:90%;box-shadow:0 25px 70px rgba(0,0,0,.4);animation:slideUp .5s}
+    @keyframes slideUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+    .pt-title{font-family:'Cormorant Garamond',serif;font-size:1.8em;font-weight:700;color:#B71C1C;margin-bottom:20px;text-align:center}
+    .pt-desc{line-height:1.8;color:#333;margin-bottom:25px;text-align:center;font-size:1.05em}
+    .pt-desc strong{color:#B71C1C}
+    .pt-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .pt-btn{padding:14px 30px;border-radius:50px;border:0;cursor:pointer;font-size:1em;font-weight:600;transition:all .3s;font-family:inherit}
+    .pt-ok{background:linear-gradient(135deg,#B71C1C,#D32F2F);color:#fff;box-shadow:0 8px 20px rgba(183,28,28,.4)}
+    .pt-ok:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(183,28,28,.5)}
+    .pt-cancel{background:#f0f0f0;color:#666}
+    .pt-cancel:hover{background:#e0e0e0}
+    .pt-emoji{font-size:2.5em;text-align:center;margin-bottom:15px;animation:bounce 1s infinite}
+    @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    @media(max-width:768px){.pt-box{padding:25px}.pt-title{font-size:1.4em}.pt-desc{font-size:1em}.pt-btn{padding:12px 25px}}
+    </style>
+
+    <div id="pt-modal">
+      <div class="pt-box">
+        <div class="pt-emoji">🎁</div>
+        <div class="pt-title">Nhận Quà Phong Thủy 2026</div>
+        <div class="pt-desc">
+          Anh/chị muốn biết năm 2026, tuổi của mình <strong>hợp linh vật nào</strong>, 
+          nên <strong>trưng rượu ở hướng nào</strong> và nên <strong>tặng lời chúc ra sao</strong> 
+          để đón vận may chứ?<br><br>
+          🔮 Nhận miễn phí <strong>BẢN PHONG THỦY QUÀ TẶNG 2026</strong> – tư vấn riêng cho tuổi của anh/chị nhé!
+        </div>
+        <div class="pt-btns">
+          <button class="pt-btn pt-cancel" id="pt-no">Không, cảm ơn</button>
+          <button class="pt-btn pt-ok" id="pt-yes">✨ OK, nhận quà</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    (function(){
+      var m=document.getElementById('pt-modal');
+      var y=document.getElementById('pt-yes');
+      var n=document.getElementById('pt-no');
+      setTimeout(function(){m.classList.add('show')},8000);
+      y.onclick=function(){
+        m.classList.remove('show');
+        var f=document.getElementById('dangky');
+        if(f)setTimeout(function(){f.scrollIntoView({behavior:'smooth',block:'center'});var inp=document.getElementById('name');if(inp)setTimeout(function(){inp.focus()},600)},300)
+      };
+      n.onclick=function(){m.classList.remove('show')};
+      m.onclick=function(e){if(e.target===m)m.classList.remove('show')};
+    })();
+    </script>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form[name="phongthuy"]');
+    
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            
+            fetch('/api/send-phongthuy-email', {
+                method: 'POST',
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(function() {
+                form.style.display = 'none';
+                
+                const successHTML = '<div style="text-align: center; padding: 60px 40px; background: white; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.2);"><div style="font-size: 70px; margin-bottom: 20px;">🎉</div><h2 style="font-family: Cormorant Garamond, serif; font-size: 36px; color: #B71C1C; margin-bottom: 20px; font-weight: 700;">Cảm ơn anh/chị!</h2><p style="font-size: 20px; line-height: 1.8; color: #333; margin-bottom: 30px;">Chúng tôi đã gửi <strong style="color: #B71C1C;">ẤN PHẨM PHONG THỦY QUÀ TẶNG 2026</strong> vào email của anh/chị.</p><div style="background: #FFF8E1; padding: 20px; border-radius: 10px; margin-bottom: 30px; border-left: 5px solid #B71C1C;">📧 Vui lòng kiểm tra <strong>hộp thư đến</strong> (hoặc thư mục spam) để nhận quà nhé!</div><a href="https://zalo.me/0986111079" target="_blank" style="display: inline-block; padding: 15px 35px; background: linear-gradient(135deg, #B71C1C, #D32F2F); color: white; text-decoration: none; border-radius: 50px; font-size: 18px; font-weight: 600;">💬 Nhắn tin Zalo tư vấn chi tiết</a></div>';
+                
+                form.parentElement.innerHTML = successHTML;
+            })
+            .catch(function(error) {
+                alert('Có lỗi xảy ra. Vui lòng thử lại!');
+            });
+        });
+    }
+});
+</script>
